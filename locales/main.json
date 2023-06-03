@@ -1,0 +1,71 @@
+{
+    "openedTicket": {
+        "embed": {
+            "title": "Ticket TICKETNAME",
+            "description": "You opened TICKETNAME"
+        },
+
+        "claimed": "USER claimed ticket",
+        "youCantClaimTicket": "You can't claim ticket!",
+        "ticketAlreadyClaimed": "Ticket already claimed",
+        "youClaimedTicket": "You claimed ticket",
+
+        "closed": "USER closed TICKETCHANNEL with reason 'REASON'",
+        "youCantCloseTicket": "You can't close ticket!",
+        "ticketAlreadyClosed": "Ticket already closed",
+        "youClosedTicket": "You closed ticket",
+
+        "closeReasonAsk": {
+            "title": "Enter close reason",
+            "label": "Close reason",
+            "placeholder": "close reason",
+            "default": "undefinded"
+        },
+
+        "claimButton": "claim",
+        "claimEmoji": "👋",
+        "closeButton": "close",
+        "closeEmoji": "❌"
+    },
+
+    "openTicketChannel": {
+        "message": {
+            "openButton": "Open ticket",
+            "title": "Open ticket!",
+            "description": "Press button below to open new ticket"
+        },
+        "ticketLimit": "You can't open more than TICKETLIMIT tickets",
+        "blockedRole": "You can't open this ticket",
+        "ticketOpened": "Ticket opened"
+    },
+
+    "ticketQuestions": {
+        "title": "Enter your questions below"
+    },
+    
+    "logger": {
+        "ticket_open": {
+            "author": {
+                "avatarURL": "https://media.discordapp.net/attachments/949976606988984333/1114545038958006282/open_ticket.png",
+                "name": "Ticket Opened"
+            },
+            "description": "CREATOR opened ticket ( CHANNEL ) with questions: \nQUESTIONS"
+        },
+
+        "ticket_claimed": {
+            "author": {
+                "avatarURL": "https://media.discordapp.net/attachments/949976606988984333/1114545039180316672/claim_ticket.png",
+                "name": "Ticket Claimed"
+            },
+            "description": "CLAIMEDBY claimed ticket #TICKETID after DURATION of creation ( CHANNEL ) "
+        },
+
+        "ticket_closed": {
+            "author": {
+                "avatarURL": "https://media.discordapp.net/attachments/949976606988984333/1114545039385833563/close_ticket.png",
+                "name": "Ticket Closed"
+            },
+            "description": "CLOSEDBY closed ticket #TICKETID after DURATION of creation with the reason: REASON ( CHANNEL )"
+        }
+    }
+}
