@@ -1,0 +1,36 @@
+{
+  "name": "ticket-bot",
+  "version": "2.1.0",
+  "description": "🤖 Discord ticket bot with locales, debugger mod and commented open source code",
+  "author": "DimidrollDev <dimidrolldev@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dimidroll06/discord-ticket-bot.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "debug": "nodemon .",
+    "cleardb": "node ./utils/cleardb"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "discordjs",
+    "ticketbot"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "better-sqlite3": "^8.4.0",
+    "discord.js": "^14.11.0",
+    "events": "^3.3.0",
+    "fs": "^0.0.1-security",
+    "jsonc": "^2.0.0",
+    "mysql2": "^3.3.3",
+    "path": "^0.12.7",
+    "quick.db": "^9.1.6"
+  }
+}
