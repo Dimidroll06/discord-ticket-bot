@@ -1,0 +1,13 @@
+{
+  "token": "", // bot token
+	"clientId": "",	// bot id
+	"guildId": "",	// channel id
+	"locales": "main.json", // locales file (see files in /locales )
+	"logger": {
+		"logChannelId": "1111111111111111111", // id of channel for logs (leave blank to disable logs)
+		"mainColor": "A3B3EE"		
+	},
+
+	"debug_mode": true, // if true then only users with debugger role can interact with bot
+	"debbuger_role": "1111111111111111111" // debugger role id
+}
