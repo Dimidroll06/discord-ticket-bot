@@ -1,0 +1,9 @@
+{
+    "mysql": {
+        "enabled": false,
+        "host": "localhost",
+        "port": "5500",
+        "password": "secret",
+        "database": "dbname"
+    }
+}

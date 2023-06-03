@@ -1,0 +1,89 @@
+{
+    "ticketTypes": [
+        {
+            "codeName": "test-ticket",
+            "image": "https://em-content.zobj.net/thumbs/120/apple/354/framed-picture_1f5bc-fe0f.png",
+            "name": "Test Ticket",
+            "emoji": "⚓",
+            "description": "Test ticket number one",
+            "categoryId": "1111111111111111111", 
+            "rolesHaveAccess": [],
+            "blockedRoles": [],
+            "color": "C70039",
+            "askQuestions": false
+        },
+        {
+            "codeName": "test-ticket-two",
+            "name": "Test Ticket 2",
+            "image": "https://em-content.zobj.net/thumbs/120/apple/354/framed-picture_1f5bc-fe0f.png",
+            "description": "Second test ticket",
+            "categoryId": "1111111111111111111", 
+            "rolesHaveAccess": [],
+            "blockedRoles": [],
+            "color": "581845",
+            "askQuestions": false
+        },
+        {
+            "codeName": "ask-ticket",
+            "name": "Ask Ticket",
+            "emoji": "🛑",
+            "image": "https://em-content.zobj.net/thumbs/120/apple/354/framed-picture_1f5bc-fe0f.png",
+            "customChannelName": "Ask-USERNAME",
+            "description": "Ask any questions",
+            "embedDescription": "USER have question: \n'QUESTION1'",
+            "categoryId": "2222222222222222222", 
+            "rolesHaveAccess": ["1111111111111111111"],
+            "blockedRoles": ["2222222222222222222"],
+            "askQuestions": true,
+            "questions": [
+                {
+                    "label": "Your question",
+                    "placeholder": "enter your question here",
+                    "style": "Paragraph",
+                    "maxLength": 4000,
+                    "required": true
+                }
+            ]
+        }
+        // EXAMPLE 
+        // {
+        //     "codeName": "code-name-for-ticket", // unique ticket code
+        //     "image": "image-url", // url of embed image for ticket (optional)
+        //     "name": "Ticket Name", // ticket name 
+        //     "emoji": "🛑", // emoji (optional)
+        //     "customChannelName": "Ask-USERNAME", // custom channel name (optional)
+        //     "description": "desription", // description of ticket
+        //     "embedDescription": "USER opened ticket #TICKETCOUNT", // custom ticket embed description (optional) 
+        //     "categoryId": "", // id of channels category 
+        //     "rolesHaveAccess": [], // optional roles who can have access to ticket 
+        //     "blockedRoles": [], // optional roles who can't open ticket  
+        //     "color": "FFFFFF", // HEX color (optional)
+        //     "askQuestions": false, // ask question before opening ticket
+        //     "questions": [
+        //         {
+        //             "label": "Question 1",
+        //             "placeholder": "Enter you first question",
+        //             "style": "Short", // "Short" or "Paragraph"
+        //             "maxLength": 1000,
+        //             "required": true
+        //         }
+        //     ]
+        // }
+    ],
+
+    "mainColor": "FFC300", // Embeds color
+
+    "ticketName": "Ticket-TICKETCOUNT",  // Here is all parameter: USER, USERID, TICKETCOUNT
+    "ticketNamePrefixClaimed": "🔰", // Prefix channel name if ticket claimed 
+
+    "rolesWhoHaveAccessToTheTickets": ["1111111111111111111"], // Roles who can access to the oppened tickets
+    "blockedRoles": ["1111111111111111111"], // blacklist
+    "rolesWhoCanCloseTicket": ["1111111111111111111", "2222222222222222222"], // who can close tickets (empty = anyone can close ticket )
+    "maxTicketOpened": 1, // max ticlets opend at time for one user (0 - infinity)
+
+    "askCloseReason": true, // ask reason before close ticket
+    "closeTicketCategoryId": "1111111111111111111", // category id where bot will send closed tickets
+    "openTicketPanelChannel": "1111111111111111111", // where bot will send open ticket panel
+
+    "pingRolesWhenOpened": true // is bot need to ping roles when ticket opened
+}
