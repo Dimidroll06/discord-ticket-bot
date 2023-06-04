@@ -11,7 +11,9 @@
   "scripts": {
     "start": "node .",
     "debug": "nodemon .",
-    "cleardb": "node ./utils/cleardb"
+    "cleardb": "node ./utils/cleardb",
+    "lint:check": "npx eslint .",
+    "lint:fix": "npx eslint . --fix"
   },
   "keywords": [
     "discord",
@@ -21,6 +23,9 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^8.42.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
     "nodemon": "^2.0.22"
   },
   "dependencies": {

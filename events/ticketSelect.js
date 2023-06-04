@@ -1,28 +1,23 @@
-var { Interaction, Client } = require('discord.js')
-var tickets = require('../controllers/tickets')
+const tickets = require('../controllers/tickets');
 
 module.exports = {
-    event: "ticketSelect",
+  event: 'ticketSelect',
 
-    /**
-     * 
-     * @param {Interaction} interaction 
-     * @param {Client} client 
-     */
-    async execute(interaction, client){
-        if (!interaction.isStringSelectMenu()) return;
+  async execute(interaction, client) {
+    if (!interaction.isStringSelectMenu()) return;
 
-        // get ticket code and ticket type
-        var ticketCode = interaction.values[0];
-        var ticketType = client.config.tickets.ticketTypes.find(type=> type.codeName == ticketCode );
+    // get ticket code and ticket type
+    const ticketCode = interaction.values[0];
+    const ticketType = client.config.tickets.ticketTypes.find((type) => type.codeName == ticketCode);
 
-        // ask questions if have
-        if (ticketType.askQuestions) return tickets.askQuestions(
-                interaction, 
-                client, 
-                ticketType
-            );
-        // else - create ticket
-        tickets.create(interaction, client, ticketType);
-    }
-}
+    // ask questions if have
+    if (ticketType.askQuestions) {
+      tickets.askQuestions(
+        interaction,
+        client,
+        ticketType,
+      );
+    // else - create ticket
+    } else tickets.create(interaction, client, ticketType);
+  },
+};
