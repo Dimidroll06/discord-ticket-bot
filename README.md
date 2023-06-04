@@ -1,6 +1,7 @@
 # Discord Ticket bot
 🤖 Discord ticket bot with locales, debugger mod and commented open source code
 
+[![](https://img.shields.io/github/package-json/v/Dimidroll06/discord-ticket-bot?style=for-the-badge)](https://github.com/Dimidroll06/discord-ticket-bot/releases)
 [![](https://img.shields.io/github/license/Dimidroll06/discord-ticket-bot?style=for-the-badge)](https://github.com/Dimidroll06/discord-ticket-bot/blob/main/LICENSE)
 [![](https://img.shields.io/github/stars/Dimidroll06/discord-ticket-bot?style=for-the-badge)](https://github.com/Dimidroll06/discord-ticket-bot/stargazers)
 
